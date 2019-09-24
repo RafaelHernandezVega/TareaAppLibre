@@ -45,6 +45,16 @@ flutter:
     - images/youtube_logo_letras_blancas.png
     - images/youtube.png
     - images/sub.png
+    - images/1.jpg
+    - images/2.jpg
+    - images/3.jpg
+    - images/4.jpg
+    - images/5.jpg
+    - images/ur.jpg
+    - images/tp.jpg
+    - images/cdj.jpg
+    - images/apple.jpg
+    - images/ip11.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

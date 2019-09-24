@@ -33,136 +33,248 @@ class Libre extends StatelessWidget {
             ],
           ),
         ),
+
         body: ListView(
           children: <Widget>[
+
             Card(
-                child: Column(
-              children: <Widget>[
-                Card(
-                  child: Image.network('https://i.ytimg.com/vi/lPe6cIHeawo/maxresdefault.jpg'),),
-                ListTile(
-                  leading: Icon(
-                    Icons.account_circle,
-                    color: Colors.red,
-                    size: 35,
+                child: Image.asset('images/ip11.jpg')
+            ),
+            ListTile(
+              leading: Container(
+                  width: 35.0,
+                  height: 35.0,
+                  decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      image: DecorationImage(
+                          fit: BoxFit.fill,
+                          image: AssetImage(
+                              "images/apple.jpg")
+                      )
+                  )),
+              title: Text(
+                'Presentamos el iPhone 11 — Apple',
+                style: TextStyle(fontWeight: FontWeight.bold,
+                  fontSize: 14.0,),
+              ),
+              subtitle: Column(
+                children: <Widget>[
+                  Row(
+                    children: <Widget>[
+                      Text('Anuncio', style: TextStyle(color: Colors.black, backgroundColor: Colors.yellow),),
+                      Text('  Apple México · 10M · 6 dias'),
+                    ],
                   ),
-                  title: Text(
-                    'ACZINO VS YOIKER FMS MÉXICO - Jornada 1 #FMSCIUDADDEMEXICO Temporada 2019',
-                    style: TextStyle(fontWeight: FontWeight.bold),
-                  ),
-                  subtitle: Text(
-                    'Urban Roosters · 753k vistas · Hace 2 meses',
-                  ),
-                  trailing: Icon(
-                    Icons.more_vert,
-                    color: Colors.grey,
-                  ),
-                )
-              ],
-            )),
+
+                  Row(
+                    children: <Widget>[
+
+                      Text('\nVer más', style: TextStyle(color: Colors.blue),),
+                    ],
+                  )
+                ],
+              ),
+              trailing: Icon(
+                Icons.more_vert,
+                color: Colors.grey,
+              ),
+              isThreeLine: true,
+            ),
+            Container(
+              decoration: BoxDecoration(
+                  border: Border(
+                    bottom: BorderSide(color: Colors.white10, width: 1),
+                  )),
+            ),
+
+
             Card(
-                child: Column(
-              children: <Widget>[
-                Card(
-                  child: Image.network(
-                      'https://pbs.twimg.com/media/D-3OxYOWkAAWtQM.jpg'),
-                ),
-                ListTile(
-                  leading: Icon(
-                    Icons.account_circle,
-                    color: Colors.yellow,
-                    size: 35,
-                  ),
-                  title: Text(
-                    'FMS ESPAÑA - Jornada 4 #FMSBILBAO Temporada 2019',
-                    style: TextStyle(fontWeight: FontWeight.bold),
-                  ),
-                  subtitle: Text('Urban Roosters · 375k vistas · Hace 1 mes'),
-                  trailing: Icon(
-                    Icons.more_vert,
-                    color: Colors.grey,
-                  ),
-                )
-              ],
-            )),
+              child: Image.asset('images/1.jpg')
+            ),
+            ListTile(
+              leading: Container(
+                  width: 35.0,
+                  height: 35.0,
+                  decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      image: DecorationImage(
+                          fit: BoxFit.fill,
+                          image: AssetImage(
+                              "images/ur.jpg")
+                      )
+                  )),
+              title: Text(
+                'ACZINO VS YOIKER FMS MÉXICO - Jornada 1 #FMSCIUDADDEMEXICO Temporada 2019',
+                style: TextStyle(fontWeight: FontWeight.bold,
+                fontSize: 14.0,),
+              ),
+              subtitle: Text(
+                'Urban Roosters · 753k vistas · Hace 2 meses',
+                style: TextStyle(fontSize: 12.0),
+              ),
+              trailing: Icon(
+                Icons.more_vert,
+                color: Colors.grey,
+              ),
+              isThreeLine: true,
+            ),
+            Container(
+              decoration: BoxDecoration(
+                  border: Border(
+                bottom: BorderSide(color: Colors.white10, width: 1),
+              )),
+            ),
+
+
             Card(
-                child: Column(
-              children: <Widget>[
-                Card(
-                  child: Image.network(
-                      'https://i.ytimg.com/vi/_Fu25tBxfAU/maxresdefault.jpg'),
-                ),
-                ListTile(
-                  leading: Icon(
-                    Icons.account_circle,
-                    color: Colors.purple,
-                    size: 35,
-                  ),
-                  title: Text(
-                    'FMS MÉXICO - Jornada 4 #FMSPUEBLA Temporada 2019',
-                    style: TextStyle(fontWeight: FontWeight.bold),
-                  ),
-                  subtitle:
-                      Text('Urban Roosters · 512k vistas · Hace 3 semanas'),
-                  trailing: Icon(
-                    Icons.more_vert,
-                    color: Colors.grey,
-                  ),
-                )
-              ],
-            )),
+              child: Image.asset('images/2.jpg')
+            ),
+            ListTile(
+              leading: Container(
+                  width: 35.0,
+                  height: 35.0,
+                  decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      image: DecorationImage(
+                          fit: BoxFit.fill,
+                          image: AssetImage(
+                              "images/ur.jpg")
+                      )
+                  )),
+              title: Text(
+                'FMS ESPAÑA - Jornada 3 #FMSBILBAO Temporada 2019',
+                style: TextStyle(fontWeight: FontWeight.bold,
+                  fontSize: 14.0,),
+              ),
+              subtitle: Text('Urban Roosters · 375k vistas · Hace 1 mes',
+                style: TextStyle(fontSize: 12.0),
+              ),
+              trailing: Icon(
+                Icons.more_vert,
+                color: Colors.grey,
+              ),
+              isThreeLine: true,
+            ),
+            Container(
+              decoration: BoxDecoration(
+                  border: Border(
+                bottom: BorderSide(color: Colors.white10, width: 1),
+              )),
+            ),
+
+
             Card(
-                child: Column(
-              children: <Widget>[
-                Card(
-                  child: Image.network(
-                      'https://pbs.twimg.com/media/ECQ6d55W4AAUP35.jpg'),
-                ),
-                ListTile(
-                  leading: Icon(
-                    Icons.account_circle,
-                    color: Colors.green,
-                    size: 35,
-                  ),
-                  title: Text(
-                    'El peor MC / El mejor MC',
-                    style: TextStyle(fontWeight: FontWeight.bold),
-                  ),
-                  subtitle: Text('Dr Severe · 27k vistas · Hace 2 dias'),
-                  trailing: Icon(
-                    Icons.more_vert,
-                    color: Colors.grey,
-                  ),
-                )
-              ],
-            )),
+              child: Image.asset('images/3.jpg')
+            ),
+            ListTile(
+              leading: Container(
+                  width: 35.0,
+                  height: 35.0,
+                  decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      image: DecorationImage(
+                          fit: BoxFit.fill,
+                          image: AssetImage(
+                              "images/ur.jpg")
+                      )
+                  )),
+              title: Text(
+                'FMS MÉXICO - Jornada 4 #FMSPUEBLA Temporada 2019',
+                style: TextStyle(fontWeight: FontWeight.bold,
+                  fontSize: 14.0,),
+              ),
+              subtitle: Text('Urban Roosters · 512k vistas · Hace 3 semanas',
+                style: TextStyle(fontSize: 12.0),
+              ),
+              trailing: Icon(
+                Icons.more_vert,
+                color: Colors.grey,
+              ),
+              isThreeLine: true,
+            ),
+            Container(
+              decoration: BoxDecoration(
+                  border: Border(
+                bottom: BorderSide(color: Colors.white10, width: 1),
+              )),
+            ),
+
+
             Card(
-                child: Column(
-              children: <Widget>[
-                Card(
-                  child: Image.network(
-                      'https://i.ytimg.com/vi/dbBGKSEAR2E/maxresdefault.jpg'),
-                ),
-                ListTile(
-                  leading: Icon(
-                    Icons.account_circle,
-                    color: Colors.blue,
-                    size: 35,
-                  ),
-                  title: Text(
-                    'Noticias Semanales',
-                    style: TextStyle(fontWeight: FontWeight.bold),
-                  ),
-                  subtitle: Text('Topes de Gama · 275k vistas · Hace 14 horas'),
-                  trailing: Icon(
-                    Icons.more_vert,
-                    color: Colors.grey,
-                  ),
-                ),
-              ],
-            )),
+              child: Image.asset('images/4.jpg')
+            ),
+            ListTile(
+              leading: Container(
+                  width: 35.0,
+                  height: 35.0,
+                  decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      image: DecorationImage(
+                          fit: BoxFit.fill,
+                          image: AssetImage(
+                              "images/cdj.jpg")
+                      )
+                  )),
+              title: Text(
+                'El peor MC / El mejor MC',
+                style: TextStyle(fontWeight: FontWeight.bold,
+                  fontSize: 14.0,),
+              ),
+              subtitle: Text('Dr Severe · 27k vistas · Hace 2 dias',
+                style: TextStyle(fontSize: 12.0),
+              ),
+              trailing: Icon(
+                Icons.more_vert,
+                color: Colors.grey,
+              ),
+              isThreeLine: true,
+            ),
+            Container(
+              decoration: BoxDecoration(
+                  border: Border(
+                bottom: BorderSide(color: Colors.white10, width: 1),
+              )),
+            ),
+
+
+            Card(
+              child: Image.asset('images/5.jpg'),
+            ),
+            ListTile(
+              leading: Container(
+                  width: 35.0,
+                  height: 35.0,
+                  decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      image: DecorationImage(
+                          fit: BoxFit.fill,
+                          image: AssetImage(
+                              "images/tp.jpg")
+                      )
+                  )),
+              title: Text(
+                'Noticias Semanales',
+                style: TextStyle(fontWeight: FontWeight.bold,
+                  fontSize: 14.0,),
+              ),
+              subtitle: Text('Topes de Gama · 275k vistas · Hace 14 horas',
+                style: TextStyle(fontSize: 12.0),
+              ),
+              trailing: Icon(
+                Icons.more_vert,
+                color: Colors.grey,
+              ),
+              isThreeLine: true,
+            ),
+            Container(
+              decoration: BoxDecoration(
+                  border: Border(
+                bottom: BorderSide(color: Colors.white10, width: 1),
+              )),
+            ),
           ],
         ),
+
 
         bottomNavigationBar: SizedBox(
           height: 53,
@@ -171,24 +283,38 @@ class Libre extends StatelessWidget {
             currentIndex: 0,
             items: [
               BottomNavigationBarItem(
-                icon: Icon(Icons.home, color: Colors.white,),
-                title: Text('Inicio', style: TextStyle(color: Colors.white),),
+                icon: Icon(
+                  Icons.home,
+                  color: Colors.white,
+                ),
+                title: Text(
+                  'Inicio',
+                  style: TextStyle(color: Colors.white),
+                ),
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.whatshot),
-                title: Text('Tendencias',),
+                title: Text(
+                  'Tendencias',
+                ),
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.subscriptions),
-                title: Text('Suscripciones',),
+                title: Text(
+                  'Suscripciones',
+                ),
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.email),
-                title: Text('Recibidos',),
+                title: Text(
+                  'Recibidos',
+                ),
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.folder),
-                title: Text('Biblioteca',),
+                title: Text(
+                  'Biblioteca',
+                ),
               ),
             ],
           ),
