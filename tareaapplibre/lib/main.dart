@@ -25,7 +25,17 @@ class Libre extends StatelessWidget {
                 onPressed: () {},
               ),
               IconButton(
-                icon: Icon(Icons.account_circle),
+                icon: Container(
+                    width: 25.0,
+                    height: 25.0,
+                    decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        image: DecorationImage(
+                            fit: BoxFit.fill,
+                            image: AssetImage(
+                                "images/avatar.jpg")
+                        )
+                    )),
                 color: Colors.blue,
                 iconSize: 25,
                 onPressed: () {},
