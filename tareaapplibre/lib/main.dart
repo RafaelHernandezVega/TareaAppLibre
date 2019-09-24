@@ -39,8 +39,7 @@ class Libre extends StatelessWidget {
                 child: Column(
               children: <Widget>[
                 Card(
-                  child: Image.network('https://i.ytimg.com/vi/lPe6cIHeawo/maxresdefault.jpg'),
-                color: Colors.blueGrey,),
+                  child: Image.network('https://i.ytimg.com/vi/lPe6cIHeawo/maxresdefault.jpg'),),
                 ListTile(
                   leading: Icon(
                     Icons.account_circle,
