@@ -9,11 +9,14 @@ class Libre extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(brightness: Brightness.dark),
       home: Scaffold(
+
+        /*************************************Inicio de AppBar********************************************/
         appBar: PreferredSize(
           preferredSize: Size.fromHeight(47.0),
           child: AppBar(
             title: Image.asset('images/youtube_logo_letras_blancas.png'),
-            actions: <Widget>[
+
+            actions: <Widget>[    /********************************Iconos de AppBar**********************************/
               IconButton(
                 icon: Icon(Icons.videocam),
                 color: Colors.white,
@@ -24,7 +27,7 @@ class Libre extends StatelessWidget {
                 color: Colors.white,
                 onPressed: () {},
               ),
-              IconButton(
+              IconButton(         /**************************Icono Circular************************************/
                 icon: Container(
                     width: 25.0,
                     height: 25.0,
@@ -35,23 +38,25 @@ class Libre extends StatelessWidget {
                             image: AssetImage(
                                 "images/avatar.jpg")
                         )
-                    )),
+                    )
+                ),
                 color: Colors.blue,
                 iconSize: 25,
                 onPressed: () {},
               )
             ],
-          ),
+          ), /*************************************Fin de AppBar********************************************/
         ),
 
         body: ListView(
           children: <Widget>[
 
+            /*************************************Inicio de Carta Anuncio********************************************/
             Card(
                 child: Image.asset('images/ip11.jpg')
             ),
             ListTile(
-              leading: Container(
+              leading: Container(       /********************************Imagen Circular******************************************/
                   width: 35.0,
                   height: 35.0,
                   decoration: BoxDecoration(
@@ -61,7 +66,8 @@ class Libre extends StatelessWidget {
                           image: AssetImage(
                               "images/apple.jpg")
                       )
-                  )),
+                  )
+              ),
               title: Text(
                 'Presentamos el iPhone 11 — Apple',
                 style: TextStyle(fontWeight: FontWeight.bold,
@@ -78,7 +84,6 @@ class Libre extends StatelessWidget {
 
                   Row(
                     children: <Widget>[
-
                       Text('\nVer más', style: TextStyle(color: Colors.blue),),
                     ],
                   )
@@ -94,10 +99,13 @@ class Libre extends StatelessWidget {
               decoration: BoxDecoration(
                   border: Border(
                     bottom: BorderSide(color: Colors.white10, width: 1),
-                  )),
+                  )
+              ),
             ),
+            /*************************************Fin de Carta Anuncio********************************************/
 
 
+            /*************************************Inicio de Carta 1********************************************/
             Card(
               child: Image.asset('images/1.jpg')
             ),
@@ -112,7 +120,8 @@ class Libre extends StatelessWidget {
                           image: AssetImage(
                               "images/ur.jpg")
                       )
-                  )),
+                  )
+              ),
               title: Text(
                 'ACZINO VS YOIKER FMS MÉXICO - Jornada 1 #FMSCIUDADDEMEXICO Temporada 2019',
                 style: TextStyle(fontWeight: FontWeight.bold,
@@ -132,10 +141,13 @@ class Libre extends StatelessWidget {
               decoration: BoxDecoration(
                   border: Border(
                 bottom: BorderSide(color: Colors.white10, width: 1),
-              )),
+                  )
+              ),
             ),
+            /*************************************Fin de Carta 1********************************************/
 
 
+            /*************************************Inicio de Carta 2********************************************/
             Card(
               child: Image.asset('images/2.jpg')
             ),
@@ -150,7 +162,8 @@ class Libre extends StatelessWidget {
                           image: AssetImage(
                               "images/ur.jpg")
                       )
-                  )),
+                  )
+              ),
               title: Text(
                 'FMS ESPAÑA - Jornada 3 #FMSBILBAO Temporada 2019',
                 style: TextStyle(fontWeight: FontWeight.bold,
@@ -169,10 +182,13 @@ class Libre extends StatelessWidget {
               decoration: BoxDecoration(
                   border: Border(
                 bottom: BorderSide(color: Colors.white10, width: 1),
-              )),
+                  )
+              ),
             ),
+            /*************************************Fin de Carta 2********************************************/
 
 
+            /*************************************Inicio de Carta 3********************************************/
             Card(
               child: Image.asset('images/3.jpg')
             ),
@@ -187,7 +203,8 @@ class Libre extends StatelessWidget {
                           image: AssetImage(
                               "images/ur.jpg")
                       )
-                  )),
+                  )
+              ),
               title: Text(
                 'FMS MÉXICO - Jornada 4 #FMSPUEBLA Temporada 2019',
                 style: TextStyle(fontWeight: FontWeight.bold,
@@ -206,10 +223,13 @@ class Libre extends StatelessWidget {
               decoration: BoxDecoration(
                   border: Border(
                 bottom: BorderSide(color: Colors.white10, width: 1),
-              )),
+                  )
+              ),
             ),
+            /*************************************Fin de Carta 3********************************************/
 
 
+            /*************************************Inicio de Carta 4********************************************/
             Card(
               child: Image.asset('images/4.jpg')
             ),
@@ -224,7 +244,8 @@ class Libre extends StatelessWidget {
                           image: AssetImage(
                               "images/cdj.jpg")
                       )
-                  )),
+                  )
+              ),
               title: Text(
                 'El peor MC / El mejor MC',
                 style: TextStyle(fontWeight: FontWeight.bold,
@@ -243,10 +264,13 @@ class Libre extends StatelessWidget {
               decoration: BoxDecoration(
                   border: Border(
                 bottom: BorderSide(color: Colors.white10, width: 1),
-              )),
+                  )
+              ),
             ),
+            /*************************************Fin de Carta 4********************************************/
 
 
+            /*************************************Inicio de Carta 5********************************************/
             Card(
               child: Image.asset('images/5.jpg'),
             ),
@@ -261,7 +285,8 @@ class Libre extends StatelessWidget {
                           image: AssetImage(
                               "images/tp.jpg")
                       )
-                  )),
+                  )
+              ),
               title: Text(
                 'Noticias Semanales',
                 style: TextStyle(fontWeight: FontWeight.bold,
@@ -280,50 +305,42 @@ class Libre extends StatelessWidget {
               decoration: BoxDecoration(
                   border: Border(
                 bottom: BorderSide(color: Colors.white10, width: 1),
-              )),
+                  )
+              ),
             ),
           ],
         ),
+        /*************************************Fin de Carta 5********************************************/
 
-
-        bottomNavigationBar: SizedBox(
+        bottomNavigationBar: SizedBox(               /******************************SizeBox para la altura de la bottomNavigationBar*************************************/
           height: 53,
           child: BottomNavigationBar(
-            type: BottomNavigationBarType.fixed,
-            currentIndex: 0,
+            selectedItemColor: Colors.white,
+            type: BottomNavigationBarType.fixed,     /******************************BottomNavigationBarType.fix arregla bNB para que aparezcan los Text******************/
+            currentIndex: 0,                          /*************************************Sirve para escoger cual item se vea seleccionado al inicio*******************/
             items: [
               BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.home,
-                  color: Colors.white,
-                ),
-                title: Text(
-                  'Inicio',
-                  style: TextStyle(color: Colors.white),
-                ),
+                icon: Icon(Icons.home),
+                title: Text('Inicio'),
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.whatshot),
-                title: Text(
-                  'Tendencias',
+                title: Text('Tendencias',
                 ),
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.subscriptions),
-                title: Text(
-                  'Suscripciones',
+                title: Text('Suscripciones',
                 ),
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.email),
-                title: Text(
-                  'Recibidos',
+                title: Text('Recibidos',
                 ),
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.folder),
-                title: Text(
-                  'Biblioteca',
+                title: Text('Biblioteca',
                 ),
               ),
             ],
